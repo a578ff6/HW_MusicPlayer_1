@@ -178,7 +178,9 @@
                         <outlet property="albumNameLabel" destination="2de-8J-2HH" id="RbT-Sp-4Ic"/>
                         <outlet property="artistLabel" destination="zMp-Wk-HPc" id="HEO-wi-v4c"/>
                         <outlet property="backgroundImageView" destination="jOd-ye-pii" id="PV5-NU-RPB"/>
+                        <outlet property="backwardButton" destination="cBk-09-hPQ" id="xFY-0u-f6F"/>
                         <outlet property="coverImageView" destination="O7f-AT-fMJ" id="iye-4g-g5N"/>
+                        <outlet property="fowardButton" destination="CkJ-xS-RTq" id="PHV-v4-pad"/>
                         <outlet property="musicCurrentTimeLabel" destination="3nx-Rv-OUO" id="vD4-ed-SdE"/>
                         <outlet property="musicProgressSlider" destination="qYu-K7-ROW" id="qcO-XW-KBQ"/>
                         <outlet property="musicTotalTimeLabel" destination="QVq-aQ-7Bc" id="QPN-Ew-JZT"/>

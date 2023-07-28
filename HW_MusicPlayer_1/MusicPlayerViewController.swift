@@ -50,7 +50,12 @@ class MusicPlayerViewController: UIViewController {
     
     /// 播放以及暫停按鈕的Outlet
     @IBOutlet weak var playAndPauseButton: UIButton!
-
+    
+    /// 下一首
+    @IBOutlet weak var fowardButton: UIButton!
+    /// 上一首
+    @IBOutlet weak var backwardButton: UIButton!
+    
     /// 音量調整
     @IBOutlet weak var volumeSlider: UISlider!
     /// 顯示音量控制條的View
@@ -118,6 +123,10 @@ class MusicPlayerViewController: UIViewController {
         
         // 預設隱藏音樂控制條的View
         volumeView.isHidden = true
+        
+        // 預設無法點擊上一首、下一首
+        fowardButton.isEnabled = false
+        backwardButton.isEnabled = false
     }
     
 
@@ -126,6 +135,9 @@ class MusicPlayerViewController: UIViewController {
         
         // 播放音樂後啟動 musicProgressSlider的控制
         musicProgressSlider.isEnabled = true
+        // 啟動上一首、下一首功能
+        fowardButton.isEnabled = true
+        backwardButton.isEnabled = true
 
         // 檢查音樂播放器的播放狀態
         switch soundPlayer.timeControlStatus {
