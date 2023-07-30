@@ -74,15 +74,22 @@
 		93AD26B42A6E70050098063C /* HW_MusicPlayer_1 */ = {
 			isa = PBXGroup;
 			children = (
+				93AD26DE2A761EE50098063C /* Models */,
+				93AD26DF2A761F0F0098063C /* View Controllers */,
+				93AD26E02A761F370098063C /* Views */,
+				93AD26DD2A761EC10098063C /* Music */,
 				93AD26B52A6E70050098063C /* AppDelegate.swift */,
 				93AD26B72A6E70050098063C /* SceneDelegate.swift */,
-				93AD26C92A6FCB680098063C /* MusicPlayerViewController.swift */,
-				93AD26DB2A72C63A0098063C /* PlayMode.swift */,
-				93AD26CB2A6FDB640098063C /* Song.swift */,
-				93AD26BB2A6E70050098063C /* Main.storyboard */,
 				93AD26BE2A6E70050098063C /* Assets.xcassets */,
 				93AD26C02A6E70050098063C /* LaunchScreen.storyboard */,
 				93AD26C32A6E70050098063C /* Info.plist */,
+			);
+			path = HW_MusicPlayer_1;
+			sourceTree = "<group>";
+		};
+		93AD26DD2A761EC10098063C /* Music */ = {
+			isa = PBXGroup;
+			children = (
 				93AD26D52A6FE3BB0098063C /* Midnight Pretenders.mp3 */,
 				93AD26D22A6FE3BB0098063C /* RIDE ON TIME.mp3 */,
 				93AD26D12A6FE3BB0098063C /* Yesterday.mp3 */,
@@ -91,7 +98,32 @@
 				93AD26CE2A6FDDCB0098063C /* Last dance.mp3 */,
 				93AD26CD2A6FDDCB0098063C /* 踅夜市.mp3 */,
 			);
-			path = HW_MusicPlayer_1;
+			path = Music;
+			sourceTree = "<group>";
+		};
+		93AD26DE2A761EE50098063C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93AD26CB2A6FDB640098063C /* Song.swift */,
+				93AD26DB2A72C63A0098063C /* PlayMode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93AD26DF2A761F0F0098063C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93AD26C92A6FCB680098063C /* MusicPlayerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		93AD26E02A761F370098063C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93AD26BB2A6E70050098063C /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
