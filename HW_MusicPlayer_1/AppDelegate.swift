@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    // 此方法是在應用程式完成啟動後被調用的。
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 這邊設定AVAudioSession的類型為播放(playback)。
+        // .playback 類型意味著應用程式希望繼續播放音頻，即使螢幕被鎖定或系統音效靜音。
+        try? AVAudioSession.sharedInstance().setCategory(.playback)
+        
         return true
     }
 
